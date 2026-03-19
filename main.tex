@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{margin=1in}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\title{Negative Mass and Local Spacetime Shortening: A Theoretical Study}
+\author{Jewel Sha Hasan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We explore the theoretical effects of negative mass on spacetime curvature within the framework of General Relativity. By considering a point negative mass as a source in the Einstein Field Equations, we show that spacetime curvature exhibits a repulsive behavior opposite to that of positive mass. This leads to novel phenomena, including local ``spacetime shortening,'' inverted gravitational time dilation, and potential implications for exotic physics such as wormholes and warp-drive-like structures.
+\end{abstract}
+
+\section{Introduction}
+Gravity is understood as the curvature of spacetime induced by mass-energy \cite{einstein1915}. Positive mass produces attractive curvature; time slows near massive objects. Hypothetical negative mass has been considered in the context of exotic matter and speculative cosmological scenarios. Here, we propose a formal exploration of negative mass effects, focusing on spacetime shortening and temporal acceleration relative to external observers.
+
+\section{Theoretical Framework}
+
+\subsection{Einstein Field Equations}
+The Einstein Field Equations (EFE) describe the relationship between spacetime curvature and mass-energy:
+
+\begin{equation}
+G_{\mu\nu} = \frac{8 \pi G}{c^4} T_{\mu\nu}
+\end{equation}
+
+where $G_{\mu\nu}$ is the Einstein tensor representing spacetime curvature, and $T_{\mu\nu}$ is the stress-energy tensor of the mass-energy distribution.
+
+\subsection{Point Negative Mass}
+For a point mass $M$, the Schwarzschild metric for positive mass is:
+
+\begin{equation}
+ds^2 = -\left(1 - \frac{2GM}{c^2 r}\right)c^2 dt^2 + \left(1 - \frac{2GM}{c^2 r}\right)^{-1} dr^2 + r^2 d\Omega^2
+\end{equation}
+
+If $M < 0$ (negative mass), the metric becomes:
+
+\begin{equation}
+ds^2 = -\left(1 + \frac{2G|M|}{c^2 r}\right)c^2 dt^2 + \left(1 + \frac{2G|M|}{c^2 r}\right)^{-1} dr^2 + r^2 d\Omega^2
+\end{equation}
+
+This leads to repulsive gravitational effects, reversed spacetime curvature, and time dilation inversion relative to distant observers.
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.45\textwidth}
+\begin{tikzpicture}
+\begin{axis}[ ... ] % Positive mass plot
+\addplot3[ surf, ... ]{-(1/(x^2+y^2+0.1))};
+\end{axis}
+\end{tikzpicture}
+\caption{Positive Mass (Dent)}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{tikzpicture}
+\begin{axis}[ ... ] % Negative mass plot
+\addplot3[ surf, ... ]{1/(x^2+y^2+0.1)};
+\end{axis}
+\end{tikzpicture}
+\caption{Negative Mass (Hill)}
+\end{minipage}
+\end{figure}
+\section{Conceptual Predictions}
+\begin{enumerate}
+    \item Repulsion of nearby positive masses.
+    \item Local spacetime shortening: proper distances behave non-intuitively near negative mass.
+    \item Temporal acceleration: clocks near negative mass run faster compared to distant observers.
+    \item Potential exotic structures: wormholes, hypothetical warp bubbles.
+\end{enumerate}
+
+\section{Discussion}
+While negative mass has not been observed experimentally, the mathematical framework is consistent with Einstein’s equations. This theory could provide a basis for further exploration in exotic spacetime geometries and tests of the limits of General Relativity. Future work includes considering extended mass distributions, dynamics of negative mass clusters, and coupling with quantum field effects.
+
+\section{Conclusion}
+Negative mass produces a repulsive curvature of spacetime, effectively leading to ``spacetime shortening'' and inverted temporal effects. This framework could have implications for exotic matter theories and speculative propulsion mechanisms in relativistic physics.
+
+\begin{thebibliography}{9}
+\bibitem{einstein1915} Einstein, A. (1915). \textit{Die Feldgleichungen der Gravitation}.
+\bibitem{morris1988} Morris, M., \& Thorne, K. (1988). \textit{Wormholes in spacetime and their use for interstellar travel}.
+\bibitem{alcubierre1994} Alcubierre, M. (1994). \textit{The warp drive: hyper-fast travel within general relativity}.
+\bibitem{bondi1957} Bondi, H. (1957). \textit{Negative mass in general relativity}.
+\end{thebibliography}
+
+\end{document}
