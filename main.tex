@@ -19,6 +19,15 @@ We explore the theoretical effects of negative mass on spacetime curvature withi
 \section{Introduction}
 Gravity is understood as the curvature of spacetime induced by mass-energy \cite{einstein1915}. Positive mass produces attractive curvature; time slows near massive objects. Hypothetical negative mass has been considered in the context of exotic matter and speculative cosmological scenarios. Here, we propose a formal exploration of negative mass effects, focusing on spacetime shortening and temporal acceleration relative to external observers.
 
+\section{Assumptions and Model Scope}
+To address known conceptual challenges such as runaway acceleration in negative mass systems, we assume the following:
+\begin{enumerate}
+    \item Negative mass exists in isolated or controlled configurations, minimizing interactions that would lead to continuous acceleration with nearby positive masses.
+    \item The focus is on local spacetime shortening effects rather than global dynamics.
+    \item Standard objections, including global runaway acceleration, are acknowledged and discussed within the framework of the model.
+\end{enumerate}
+These assumptions allow us to explore local temporal and spatial effects while remaining aware of potential limitations in a realistic universe.
+
 \section{Theoretical Framework}
 
 \subsection{Einstein Field Equations}
@@ -44,26 +53,49 @@ ds^2 = -\left(1 + \frac{2G|M|}{c^2 r}\right)c^2 dt^2 + \left(1 + \frac{2G|M|}{c^
 \end{equation}
 
 This leads to repulsive gravitational effects, reversed spacetime curvature, and time dilation inversion relative to distant observers.
+
 \begin{figure}[h!]
 \centering
-\begin{minipage}{0.45\textwidth}
 \begin{tikzpicture}
-\begin{axis}[ ... ] % Positive mass plot
-\addplot3[ surf, ... ]{-(1/(x^2+y^2+0.1))};
+
+% Positive Mass: dent
+\begin{axis}[
+    width=6cm, height=5cm,
+    title={Positive Mass (Spacetime Dent)},
+    xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+    view={45}{30},
+    colormap/viridis,
+]
+\addplot3[
+    surf,
+    samples=20,
+    domain=-2:2,
+]
+{-(1/(x^2+y^2+0.1))}; % dent shape
 \end{axis}
-\end{tikzpicture}
-\caption{Positive Mass (Dent)}
-\end{minipage}
-\hfill
-\begin{minipage}{0.45\textwidth}
-\begin{tikzpicture}
-\begin{axis}[ ... ] % Negative mass plot
-\addplot3[ surf, ... ]{1/(x^2+y^2+0.1)};
+
+\hspace{1cm}
+
+% Negative Mass: hill
+\begin{axis}[
+    width=6cm, height=5cm,
+    title={Negative Mass (Spacetime Hill)},
+    xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+    view={45}{30},
+    colormap/viridis,
+]
+\addplot3[
+    surf,
+    samples=20,
+    domain=-2:2,
+]
+{(1/(x^2+y^2+0.1))}; % hill shape
 \end{axis}
+
 \end{tikzpicture}
-\caption{Negative Mass (Hill)}
-\end{minipage}
+\caption{Spacetime curvature for a point mass. Left: Positive mass curves spacetime inward (dent). Right: Negative mass curves spacetime outward (hill), visualizing ``spacetime shortening.''}
 \end{figure}
+
 \section{Conceptual Predictions}
 \begin{enumerate}
     \item Repulsion of nearby positive masses.
@@ -73,7 +105,7 @@ This leads to repulsive gravitational effects, reversed spacetime curvature, and
 \end{enumerate}
 
 \section{Discussion}
-While negative mass has not been observed experimentally, the mathematical framework is consistent with Einstein’s equations. This theory could provide a basis for further exploration in exotic spacetime geometries and tests of the limits of General Relativity. Future work includes considering extended mass distributions, dynamics of negative mass clusters, and coupling with quantum field effects.
+While negative mass has not been observed experimentally, the mathematical framework is consistent with Einstein’s equations. The assumptions outlined in Section 2 allow for local effects without immediately triggering runaway acceleration scenarios. Future work includes considering extended mass distributions, dynamics of negative mass clusters, and coupling with quantum field effects.
 
 \section{Conclusion}
 Negative mass produces a repulsive curvature of spacetime, effectively leading to ``spacetime shortening'' and inverted temporal effects. This framework could have implications for exotic matter theories and speculative propulsion mechanisms in relativistic physics.
