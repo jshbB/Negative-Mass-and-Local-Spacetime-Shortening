@@ -43,5 +43,5 @@ Full license: [https://creativecommons.org/licenses/by/4.0/](https://creativecom
 ## Contact
 
 **Jewel Sha Hasan**  
-GitHub: [https://github.com/YourUsername](https://github.com/YourUsername)  
-Email: [YourEmail@example.com](mailto:YourEmail@example.com)
+GitHub: [https://github.com/jshbB](https://github.com/jshbB)  
+Email: [jewelshahasan0@gmail.com](mailto:jewelshahasan0@gmail.com)
