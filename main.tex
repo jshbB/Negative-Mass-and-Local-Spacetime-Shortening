@@ -56,12 +56,11 @@ This leads to repulsive gravitational effects, reversed spacetime curvature, and
 
 \begin{figure}[h!]
 \centering
+\begin{minipage}{0.45\textwidth}
 \begin{tikzpicture}
-
-% Positive Mass: dent
 \begin{axis}[
-    width=6cm, height=5cm,
-    title={Positive Mass (Spacetime Dent)},
+    width=\textwidth, height=5cm,
+    title={Positive Mass (Dent)},
     xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
     view={45}{30},
     colormap/viridis,
@@ -70,30 +69,30 @@ This leads to repulsive gravitational effects, reversed spacetime curvature, and
     surf,
     samples=20,
     domain=-2:2,
-]
-{-(1/(x^2+y^2+0.1))}; % dent shape
+]{-(1/(x^2+y^2+0.1))};
 \end{axis}
-
-\hspace{1cm}
-
-% Negative Mass: hill
-\begin{axis}[
-    width=6cm, height=5cm,
-    title={Negative Mass (Spacetime Hill)},
-    xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
-    view={45}{30},
-    colormap/viridis,
-]
-\addplot3[
-    surf,
-    samples=20,
-    domain=-2:2,
-]
-{(1/(x^2+y^2+0.1))}; % hill shape
-\end{axis}
-
 \end{tikzpicture}
-\caption{Spacetime curvature for a point mass. Left: Positive mass curves spacetime inward (dent). Right: Negative mass curves spacetime outward (hill), visualizing ``spacetime shortening.''}
+\caption{Positive Mass (Dent)}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth, height=5cm,
+    title={Negative Mass (Hill)},
+    xlabel={$x$}, ylabel={$y$}, zlabel={$z$},
+    view={45}{30},
+    colormap/viridis,
+]
+\addplot3[
+    surf,
+    samples=20,
+    domain=-2:2,
+]{1/(x^2+y^2+0.1)};
+\end{axis}
+\end{tikzpicture}
+\caption{Negative Mass (Hill)}
+\end{minipage}
 \end{figure}
 
 \section{Conceptual Predictions}
