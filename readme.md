@@ -17,8 +17,6 @@ Potential implications include exotic structures like wormholes and speculative 
 
 - `main.tex` → LaTeX source of the paper  
 - `NegativeMassTheory.pdf` → Compiled PDF version for easy reading  
-- `figures/` → Contains diagrams illustrating positive vs negative mass curvature  
-- `references.bib` → Bibliography file (BibTeX)  
 - `LICENSE` → CC BY 4.0 License (ensures credit is given to the author)  
 
 ---
